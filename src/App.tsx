@@ -5,6 +5,7 @@ import MenuItem from './components/Menu/menuItem'
 function App() {
   return (
     <div className="App">
+      <header>learn react</header>
       <section className="App-header">
         <Button> Default Button </Button>
         <Button disabled> Disabled Button </Button>
