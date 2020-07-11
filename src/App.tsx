@@ -2,6 +2,7 @@ import React from 'react';
 import Button, { ButtonType, ButtonSize } from './components/Button/button'
 import Menu from './components/Menu/menu'
 import MenuItem from './components/Menu/menuItem'
+import SubMenu from './components/Menu/subMenu'
 function App() {
   return (
     <div className="App">
@@ -18,14 +19,18 @@ function App() {
       <section className="App-header">
         <Menu defaultIndex={0} onSelect={(index) => {
           alert(index)
-        }}>
-          <MenuItem index={0}>
+        }} >
+          <MenuItem>
             cool link 1
           </MenuItem>
-          <MenuItem index={1} disabled>
+          <MenuItem>
             cool link 2
           </MenuItem>
-          <MenuItem index={2}>
+          <SubMenu title='dropdown'>
+            <MenuItem>dropdown 1</MenuItem>
+            <MenuItem>dropdown 2</MenuItem>
+          </SubMenu>
+          <MenuItem>
             cool link 3
           </MenuItem>
         </Menu>
