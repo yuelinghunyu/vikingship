@@ -3,6 +3,7 @@ import Button, { ButtonType, ButtonSize } from './components/Button/button'
 import Menu from './components/Menu/menu'
 import MenuItem from './components/Menu/menuItem'
 import SubMenu from './components/Menu/subMenu'
+import Alert from './components/Alert/alert'
 function App() {
   return (
     <div className="App">
@@ -34,6 +35,21 @@ function App() {
             cool link 3
           </MenuItem>
         </Menu>
+      </section>
+      <section className="App-header">
+        <div
+          style={{
+            padding: '20px 40px',
+            width: '500px'
+          }}
+        >
+          <h3>组件演示</h3>
+          <Alert
+            closable
+            title="this is alert!"
+            type="default"
+          />
+        </div>
       </section>
     </div>
   );
